@@ -1,7 +1,10 @@
-package repositories;
+package todoapp.repositories;
 
-import entities.TodoList;
 
+import org.springframework.stereotype.Component;
+import todoapp.entities.TodoList;
+
+@Component
 public interface TodoListRepository {
     TodoList[] getAll();
 
