@@ -1,7 +1,9 @@
-package repositories;
+package todoapp.repositories;
 
-import entities.TodoList;
+import org.springframework.stereotype.Component;
+import todoapp.entities.TodoList;
 
+@Component
 public class TodoListRepositoryImpl implements TodoListRepository {
     public static TodoList[] todos = new TodoList[2];
 
